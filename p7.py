@@ -22,7 +22,6 @@ plt.show()
 print("MSE:", mean_squared_error(yte, yp))
 print("R2:", r2_score(yte, yp))
 
-
 a = fetch_openml(name="autoMpg", version=1, as_frame=True)
 X = a.data[['horsepower']].dropna().astype(float)
 y = a.target.loc[X.index].astype(float)
